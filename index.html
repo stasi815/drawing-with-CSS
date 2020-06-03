@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Draw</title>
+    <style>
+        body, html {
+            height: 100%;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div style="display: grid; grid-template-columns: repeat(4, 160px);">
+        <!-- red box -->
+        <div style="
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        background-color: red"></div>
+        <!-- red circle -->
+        <div style="
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        border-radius: 50%;
+        background-color: red"></div>
+        <!-- red box w/ border -->
+        <div style="
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        border: 8px solid;
+        background-color: red"></div>
+        <!-- red box w/ border & rounded corner -->
+        <div style="
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        border: 8px solid;
+        border-radius: 0 0 0 50%;
+        background-color: red"></div>
+        <!-- green leaf -->
+        <div style="
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        border: 8px solid;
+        border-radius: 0 50% 50% 50%;
+        background-color: rgb(62, 182, 26);"></div>
+        <!-- yellow lemon -->
+        <div style="
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        border: 8px solid;
+        border-radius: 0 50% 0 50%;
+        background-color: rgb(245, 241, 34);"></div>
+        <!-- minus -->
+        <div style="
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        border: 8px solid;
+        background-color: white;
+        position: relative;">
+            <div style="
+            width: 60px;
+            height: 20px;
+            background-color: black;
+            transform: translate(20px, 20px);"></div>
+        </div>
+        <!-- equals -->
+        <div style="
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        border: 8px solid;
+        background-color: rgb(30, 66, 184);
+        position: relative;">
+            <div style="
+            width: 60px;
+            height: 20px;
+            margin-bottom: 20px;
+            background-color: rgb(245, 228, 0);
+            transform: translate(20px, 20px);"></div>
+            <div style="
+            width: 60px;
+            height: 20px;
+            margin-top: 20px;
+            background-color: rgb(245, 228, 0);
+            transform: translate(20px, 20px);"></div>
+        </div>
+        <!-- plus -->
+        <div style="
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        border: 8px solid;
+        background-color: red;
+        position: relative;">
+            <div style="
+            width: 60px;
+            height: 20px;
+            background-color: white;
+            transform: translate(20px, 40px);position: absolute;"></div>
+            <div style="
+            width: 20px;
+            height: 60px;
+            background-color: white;
+            transform: translate(40px, 20px);position: absolute;"></div>
+        </div>
+        <!-- cross -->
+        <div style="
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        border: 8px solid;
+        background-color: white;
+        position: relative;">
+            <div style="
+            width: 60px;
+            height: 16px;
+            background-color: black;
+            transform: translate(22px, 44px)rotate(-45deg);
+            position: absolute;"></div>
+            <div style="
+            width: 16px;
+            height: 60px;
+            background-color: black;
+            transform: translate(44px, 22px)rotate(-45deg);
+            position: absolute;"></div>
+        </div>
+        <!-- circle cross -->
+        <div style="
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        border: 8px solid;
+        border-radius: 50%;
+        background-color: white;
+        position: relative;">
+            <div style="
+            width: 60px;
+            height: 20px;
+            background-color: black;
+            transform: translate(20px, 40px)rotate(-45deg);
+            position: absolute;"></div>
+            <div style="
+            width: 20px;
+            height: 60px;
+            background-color: black;
+            transform: translate(40px, 20px)rotate(-45deg);
+            position: absolute;"></div>
+        </div>
+        <!-- arrow -->
+        <div style="
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        border: 8px solid;
+        border-radius: 50%;
+        background-color: white;
+        position: relative;">
+            <div style="
+            width: 52px;
+            height: 8px;
+            background-color: black;
+            transform: translate(20px, 46px);
+            position: absolute;"></div>
+            <div style="
+            width: 40px;
+            height: 8px;
+            background-color: black;
+            transform: translate(44px, 34px)rotate(45deg);
+            position: absolute;"></div>
+            <div style="
+            width: 40px;
+            height: 8px;
+            background-color: black;
+            transform: translate(44px, 58px)rotate(-45deg);
+            position: absolute;"></div>
+        </div>
+        <!-- robot -->
+        <div style="
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        border: 8px solid;
+        background-color: rgb(180, 196, 209);
+        position: relative;">
+            <div style="
+            width: 56px;
+            height: 8px;
+            border-radius: 10px;
+            border: 8px solid;
+            background-color: rgb(255, 0, 0);
+            transform: translate(16px, 60px);
+            position: absolute;"></div>
+            <div style="
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            border: 8px solid;
+            background-color: rgb(255, 0, 0);
+            transform: translate(16px, 16px);
+            position: absolute;"></div>
+            <div style="
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            border: 8px solid;
+            background-color: rgb(255, 0, 0);
+            transform: translate(56px, 16px);
+            position: absolute;"></div>
+        </div>
+        <!-- vampire -->
+        <div style="
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        border: 8px solid;
+        border-radius: 24px 24px 36px 36px;
+        background-color: white;
+        position: relative;">
+            <div style="
+            width: 32px;
+            height: 0px;
+            border-top: 6px solid black;
+            border-left: 12px solid black;
+            border-right: 12px solid black;
+            border-bottom: 12px solid transparent;
+            transform: translate(24px, 64px);
+            position: absolute;"></div>
+            <div style="
+            width: 16px;
+            height: 16px;
+            border-radius: 0 50% 50% 50%;
+            border: 8px solid;
+            background-color: white;
+            transform: translate(16px, 16px);
+            position: absolute;">
+                <div style="
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: black;
+                transform: translate(4px, 8px)"></div>
+            </div>
+            <div style="
+            width: 16px;
+            height: 16px;
+            border-radius: 50% 0 50% 50%;
+            border: 8px solid;
+            background-color: white;
+            transform: translate(56px, 16px);
+            position: absolute;">
+                <div style="
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: black;
+                transform: translate(4px, 8px)"></div>
+            </div>
+        </div>
+        <!-- bird -->
+        <div style="
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        border: 8px solid;
+        background-color: rgb(200, 230, 255);
+        ">
+            <div style="
+            width: 60px;
+            height: 60px;
+            background-color: rgb(59, 90, 126);
+            border-radius: 50% 50% 50% 0;
+            position: absolute;
+            transform: translate(24px, 36px);
+            "></div>
+            <div style="
+            width: 40px;
+            height: 40px;
+            background-color: rgb(66, 102, 143);
+            border-radius: 50% 50% 50% 0;
+            position: absolute;
+            border-right: 1px solid;
+            transform: translate(36px, 46px);
+            "></div>
+            <div style="
+            width: 28px;
+            height: 28px;
+            background-color: rgb(59, 90, 126);
+            border-radius: 50% 0 50% 50%;
+            position: absolute;
+            transform: translate(56px, 12px) rotate(45deg);
+            ">
+                <div style="
+                width: 6px;
+                height: 6px;
+                background-color: white;
+                border-radius: 50%;
+                transform: translate(8px, 8px);
+                "></div>
+            </div>
+        </div>
+        <!-- Kirby -->
+        <div style="
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        border: 8px solid;
+        background-color: rgb(193, 238, 255);
+        position: relative;
+        ">
+            <div style="
+            width: 28px;
+            height: 20px;
+            background-color: rgb(250, 95, 95);
+            border-radius: 50%;
+            position: absolute;
+            transform: translate(20px, 72px);
+            "></div>
+            <div style="
+            width: 60px;
+            height: 60px;
+            background-color:rgb(255, 146, 146);
+            border-radius: 50%;
+            position: absolute;
+            transform: translate(20px, 28px);
+            "></div>
+            <div style="
+            width: 4px;
+            height: 10px;
+            background-color: black;
+            position: absolute;
+            transform: translate(56px, 32px);
+            "></div>
+            <div style="
+            width: 4px;
+            height: 10px;
+            background-color: black;
+            position: absolute;
+            transform: translate(36px, 32px);
+            "></div>
+            <div style="
+            width: 28px;
+            height: 22px;
+            background-color:rgb(182, 55, 55);
+            border-radius: 50%;
+            position: absolute;
+            transform: translate(36px, 40px);
+            ">
+                <div style="
+                width: 12px;
+                height: 8px;
+                background-color: rgb(231, 112, 112);
+                border-radius: 50%;
+                position: absolute;
+                transform: translate(10px, 14px);
+                "></div>
+            </div>
+            <div style="
+            width: 10px;
+            height: 14px;
+            background-color:rgb(255, 146, 146);
+            border-radius: 50%;
+            border-right: 2px solid;
+            position: absolute;
+            transform: translate(20px, 52px);
+            "></div>
+            <div style="
+            width: 10px;
+            height: 14px;
+            background-color:rgb(255, 146, 146);
+            border-radius: 50%;
+            border-left: 2px solid;
+            position: absolute;
+            transform: translate(68px, 52px);
+            "></div>
+            <div style="
+            width: 28px;
+            height: 20px;
+            background-color: rgb(250, 95, 95);
+            border-radius: 50%;
+            position: absolute;
+            transform: translate(52px, 72px);
+            "></div>
+
+        </div>
+    </div>
+
+</body>
+</html>
